@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Thestaple</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>The Staple</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
 
-<%= yield %>
+		<div class="container">
+			<%= yield %>
+		</div>
 
-</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+        $(document).ready (function (){
+            $(".navbar").affix ();
+        });
+
+        $('#nav').affix({
+    			offset: { top: $('#nav').offset().top }
+				});​
+
+				$('#nav-wrapper').height($("#nav").height());
+     </script>
+	</body>
 </html>

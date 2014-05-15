@@ -1,0 +1,15 @@
+@import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
