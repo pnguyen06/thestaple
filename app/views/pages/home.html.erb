@@ -1,77 +1,100 @@
-<!-- Carousel================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+<!-- CAROUSEL -->
+<div class="carousel slide">
   <div class="carousel-inner">
     <div class="item bg bg1 active">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-        </div>
+          <h1><b>THIS IS NOT A RESTAURANT.</b></h1>
+          <p>You're probably in the wrong place.</p>
+          <span class="glyphicon glyphicon-hand-down" style="font-size: 2em;"></span>
       </div>
     </div>
-    <div class="item bg bg2">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<div class="nav-wrapper">
+  <div class="nav navbar navbar-default affix" data-spy="affix" data-offset-top="50">
+    <%= render 'layouts/header' %>
+	</div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" style="z-index: -1;">
+      <small>
+        <b><u>Location</u></b>
+        <br />
+        925 W. 21st St.
+        <br />
+        New York City 10011
+        <br /><br />
+        <b><u>Contact</u></b>
+        <br />
+        212-555-1212
+        <br /><br />
+        <b><u>Hours</u></b>
+        <br />
+        Wed-Sun 5:30PM - 11:30PM
+        <br /><br />
+        <b><u>Reservations</u></b>
+        <br />
+        We do not take reservations
+      </small>
+    </div>
+    <div class="col-md-9" style="z-index: -1;">
+      <div class="row">
+        <div class="col-md-7">
+          <h2> 
+            <span>Welcome to The Staple</span>
+          </h2>
+          Begun decades ago in New York's Chelsea neighborhood as a means for the best chefs in the world to explore creative and delicious endeavors at the forefront of cooking, The Staple continues to delight guests today.
+        </div>
+        <div class="col-md-5 center">
+          <img src="http://lorempixel.com/g/250/250"></img>
         </div>
       </div>
-    </div>
-    <div class="item bg bg1">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+      <hr>
+      <div class="row">
+        <div class="col-md-7 col-md-push-5">
+          <h2> 
+            <span>The Food</span>
+          </h2>
+          We aim to serve only the best food to our guests. Our food focuses on taste by disregarding conventional standards of presentation, nutrition, and source of ingredients.
+        </div>
+        <div class="col-md-5 col-md-pull-7 center">
+          <img src="http://lorempixel.com/g/250/250"></img>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <h2> 
+            <span>World-Class Chefs</span>
+          </h2>
+          Our chefs have trained around the world at both prestigious schools and local favorite hole-in-the-wall restaurants. They may not have their own television shows or a best-selling cookbook, but they sure can make some delicious food.
+        </div>
+        <div class="col-md-5 center">
+          <img src="http://lorempixel.com/g/250/250"></img>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-7 col-md-push-5">
+          <h2> 
+            <span class="glyphicon glyphicon-star-empty"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+          </h2>
+          The Staple has consistently been ranked as one of the best restaurants in New York since first opening its doors.
+        </div>
+        <div class="col-md-5 col-md-pull-7 center">
+          <img src="http://lorempixel.com/g/250/250"></img>
         </div>
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-
-
-<div class="nav-wrapper">
-  <div class="nav navbar navbar-default affix" data-spy="affix" data-offset-top="50">
-  	<div class="container">
-	  	<div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			    <span class="sr-only">Toggle navigation</span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-	   		</button>
-	    	<a class="navbar-brand" href="#">Pinteresting</a>
-	  	</div>
-
-	  	<!-- Collect the nav links, forms, and other content for toggling -->
-	  	<div class="collapse navbar-collapse navbar-ex1-collapse">
-	    	<ul class="nav navbar-nav navbar-right">
-	      	<li><%= link_to "Home", root_path %></li>
-	      	<li><%= link_to "About", about_path %></li> 
-	    	</ul>
-	  	</div><!-- /.navbar-collapse -->
-	  </div>
-	</div>
-</div>
-<div class="container">
-    <div class="span3">
-        <h2>some lorem ipsum for scrolling:</h2>
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </div>
 </div>

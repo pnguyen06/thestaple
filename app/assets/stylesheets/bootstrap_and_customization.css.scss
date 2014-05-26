@@ -1,4 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
+$font-family-base: 'Libre Baskerville', serif;
+
+
 @import 'bootstrap';
+
+
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
 
 .center {
      text-align: center;
